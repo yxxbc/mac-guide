@@ -1,49 +1,74 @@
-# macOS 现代极客调教指南 (macOS Power-User Guide)
+# macOS 现代全景调教指南 (mac-guide)
 
-> 借鉴 Arch Linux 社区的深度定制精神与现代工作流哲学，打造一套无废话、成体系、开箱即用的现代化 macOS 开发与极客折腾手册。
+> 从 Windows 迁移到日常办公，从多媒体创作到极客平铺桌面，打造一套无废话、全覆盖、开箱即用的现代化 macOS 全景手册。
 
 ---
 
 ## 为什么写这份指南？
 
-长期以来，无论是在国内还是海外社区，关于 macOS 的深度配置资料都有一个通病：**极度碎片化**。
+长期以来，无论是在中文社区还是海外论坛，关于 macOS 的深度配置资料都面临着严重的**两极分化与碎片化**：
+- **普通用户两眼一抹黑**：网上充斥着铺天盖地的营销号推荐、流氓清理软件甚至恶意推广，而关于“外接显示器字体模糊发虚”、“移动硬盘 NTFS 无法写入”、“解压 Windows 压缩包中文乱码”、“没有剪切键”等高频日常痛点，往往找不到系统、靠谱且免费的现代解法；
+- **进阶极客无处着手**：很多从 Linux（特别是 Arch Linux / Hyprland / i3）转到 Mac 的开发者，被漫长的窗口动画、生硬的外接鼠标滚轮、打架的快捷键和复杂的权限模型劝退；
+- **资料过时严重**：许多网络攻略停留在 Intel Mac 时代（推荐早已过时的 CleanMyMac、旧版 Yabai 关 SIP、Soundflower 虚拟声卡等），在现代 Apple Silicon (M 系列芯片) 和最新 macOS 版本下早已失效甚至引发崩溃。
 
-- 官方文档停留在初学者开箱说明（教你用触控板和 Dock）或原生的 Swift/Cocoa 开发者 API，中间最庞大的“专业开发者、CLI 玩家、键盘流效率狂人”的系统定制知识处于真空地带。
-- 社区流传的很多所谓“装机必备”往往是粗糙的商业软件堆砌（甚至夹带私货推荐清理大师），而真正的深度玩法（`defaults` 调优、免关 SIP 平铺窗口管理、现代 Rust CLI 工具链替换、多语言环境隔离）散落在 GitHub 的 Gist、个人 dotfiles、Reddit 以及少数极客的个人博客里。
-- 很多从 Linux（特别是 Arch Linux / Hyprland / Niri / i3）转到 macOS 的开发者，初上手时都会产生强烈的割裂感与挫败感：窗口管理滞后、终端延迟高、键位逻辑分裂、包管理依赖污染。
-
-这份指南的目标就是**打破这种零散状态**：
-像社区里优秀的发行版向导（如 Arch Linux 社区的经典指南）一样，用**明确的主见（Opinionated）**、**高度结构化的脉络**与**直接可落地的脚本配置**，带你从一块纯净的 macOS 原厂砖头，一步步构筑出极速、优雅且可复现的现代极客工作站。
-
----
-
-## 核心设计哲学
-
-1. **坚持声明式与可复现（Reproducible）**：
-   拒绝点鼠标“凭记忆配置”。系统软件通过 `Brewfile` 统一管理，运行时通过 `mise` 声明，终端与桌面配置文件全部代码化，换机或重装一条命令即可满血复活。
-2. **拥抱现代 CLI 全家桶（Modern Rust Tools）**：
-   全面淘汰上世纪遗留的古老 Unix 工具链。用 `eza` 取代 `ls`，用 `bat` 取代 `cat`，用 `zoxide` 取代 `cd`，用 `ripgrep` 取代 `grep`，用 `mise` 取代各语言老旧的 `*env`。
-3. **极简、省电与原生性能优先**：
-   抛弃笨重的跨平台 Electron 堆砌物与常驻高耗电服务；容器化全面抛弃臃肿的 Docker Desktop，采用原生轻量的 OrbStack；终端优先采用 GPU 硬件加速的 Ghostty / Kitty。
-4. **尊重 macOS 特性，不盲目破坏安全边界**：
-   在平铺窗口（Tiling WM）方案上，优先选用**无需关闭 SIP（系统完整性保护）**的现代树形窗口管理器 AeroSpace，兼顾极客键盘流的高效与 Apple Silicon 的硬件安全。
+**这份指南的目标是打破一切割裂**：
+无论你是刚买第一台 MacBook 的大学生、日常轻度办公文职、摄影与影音创作者，还是重度键盘流的程序员与开源极客，都能在这里找到**符合现代 macOS 架构的最佳实践与开箱即用方案**。
 
 ---
 
-## 章节速览与路线图
+## 全景架构导航
 
-| 章节 | 核心内容 | 重点工具 / 技术点 |
-| :--- | :--- | :--- |
-| **01. 开箱净化与基础体验** | 系统初始化、安全边界理解、命令行深度优化、外设体验修复 | `defaults write`、Gatekeeper、SIP、MOS / Mac Mouse Fix |
-| **02. 现代包管理与开发底座** | 声明式软件生命周期管理、现代多语言环境、极速轻量容器 | Homebrew、`Brewfile`、`mise`、OrbStack / Colima |
-| **03. 现代终端与 CLI 生产力** | GPU 加速极速终端、现代 Shell 提示符、现代工具链替换、终端看板美化 | Ghostty / Kitty、Starship、`zoxide`、`eza`、`bat`、`fastfetch` |
-| **04. 键盘流与平铺桌面** | 把 macOS 变成真正的平铺桌面、全局快捷键网格、效率启动器 | AeroSpace、JankyBorders、Raycast、Karabiner Hyper 键 |
-| **05. 实用技巧与日常维护** | 终端与系统代理避坑、环境备份与无缝迁移 | TUN 模式、Proxychains、Chezmoi / Git Dotfiles |
+```
+mac-guide/
+├── 00-beginner-guide/         # 新手入门与认知转型（小白到熟练工）
+│   ├── windows-to-mac.md      # 从 Windows 到 Mac：概念重塑（键位/退出/Finder逻辑）
+│   ├── initial-setup.md       # 系统初始化设置：触控板三指拖移、Gatekeeper 与 SIP
+│   ├── quick-look.md          # 神奇的空格键：Quick Look 预览增强全家桶
+│   ├── window-snapping.md     # 日常轻量分屏：Rectangle 与原生窗口吸附
+│   └── office-essentials.md   # 解压乱码救星 Keka 与原生办公高阶技巧
+├── 01-hardware-and-display/   # 外接设备与硬件生态（痛点高发区）
+│   ├── external-displays.md   # 外接显示器避坑：HiDPI发虚、DDC硬件调光与 BetterDisplay
+│   ├── ntfs-and-disks.md      # 移动硬盘与 U 盘 NTFS 无法写入终极解法 (exFAT与工具)
+│   ├── input-and-mouse.md     # 键位与外接鼠标：消除滚轮卡顿 (MOS) 与外接键盘映射
+│   └── battery-aldente.md     # 电池健康长寿秘诀：AlDente 锁电 80% 与电源管理
+├── 02-media-and-creation/     # 影音娱乐与多媒体创作
+│   ├── video-player-iina.md   # 影音播放器天花板 IINA：HDR、手势与全格式播放
+│   ├── audio-routing.md       # 音频内录与虚拟声卡：BlackHole 录制系统声音与网课
+│   └── screenshot-tools.md    # 截图、长截图、取色与贴图：Shottr 生产力神器
+├── 03-input-and-fonts/        # 输入法与文字排版
+│   ├── input-methods.md       # 输入法大升级：原生调优、Input Source Pro 自动切换与 Rime
+│   └── typography-fonts.md    # 字体排版与终端渲染美化：等宽字体与更纱黑体
+├── 04-windows-and-gaming/     # Windows 兼容层与 Mac 游戏
+│   ├── whisky-gaming.md       # Apple Silicon 玩 Windows 游戏：Whisky + Apple GPTK 实战
+│   └── virtual-machines.md    # 虚拟机方案对比：免费开源 UTM vs 商业 Parallels
+├── 05-system-maintenance/     # 系统净化与存储维护
+│   ├── system-cleaner.md      # 彻底卸载应用：AppCleaner 拒绝流氓清理软件
+│   ├── storage-rescue.md      # 深度拯救“系统数据”暴增：本地快照与大文件清理
+│   └── defaults-tuning.md     # defaults 命令行深度调优：消除动画与 Finder 净化
+├── 06-package-management/     # 现代包管理与开发底座 (开发者篇)
+│   ├── homebrew.md            # Homebrew 现代化管理：清华源加速与 Brewfile 备份
+│   ├── runtime-mise.md        # 现代运行时管理神器 mise (统一 Node/Py/Go/Rust)
+│   └── containers.md          # 轻量容器化方案：告别 Docker Desktop，拥抱 OrbStack
+├── 07-terminal-and-cli/       # 现代终端与 CLI 生产力
+│   ├── terminal-emulators.md  # 现代 GPU 加速终端选型与配置：Ghostty / Kitty
+│   ├── shell-and-prompt.md    # Shell 与 Starship 极速提示符：抛弃臃肿 Oh-My-Zsh
+│   ├── modern-unix-tools.md   # 现代 CLI 全家桶替代表 (eza/zoxide/bat/rg/delta)
+│   └── fastfetch-rice.md      # 终端 Rice 与 fastfetch 系统看板 (自适应防爆框)
+├── 08-tiling-and-desktop/     # 键盘流与平铺桌面
+│   ├── aerospace.md           # 免关 SIP 平铺利器 AeroSpace：i3 树形平铺与瞬切
+│   ├── borders-and-bar.md     # 窗口活动边框 JankyBorders 与视觉增强
+│   ├── launcher-raycast.md    # 效率中枢 Raycast：深度配置与工作流
+│   └── karabiner-hyper.md     # Karabiner-Elements 与 Hyper 超级键 (Caps Lock 改造)
+└── 09-workflows-and-tricks/   # 实用技巧与日常维护
+    ├── network-proxy.md       # macOS 网络代理避坑：终端 proxy 函数与 TUN 模式
+    └── dotfiles-backup.md     # 声明式 Dotfiles 跨机同步：Chezmoi 换机一键还原
+```
 
 ---
 
-## 运行环境假设
+## 核心设计原则
 
-- **硬件架构**：推荐 Apple Silicon (M1 / M2 / M3 / M4 芯片全系列)。
-- **系统版本**：macOS 14 (Sonoma) 或 macOS 15 (Sequoia) 及以上。
-- **目标受众**：程序员、开源极客、全键盘流工作者，以及希望榨干 Mac 生产力的折腾玩家。
+1. **全人群场景覆盖**：从纯小白日常使用痛点（看视频、外接屏幕、鼠标、解压缩、电池保养）到高阶极客工作流无缝衔接；
+2. **严守安全与原厂标准**：全面基于 Apple Silicon 硬件与现代 macOS 体系，**坚决不破环 SIP（系统完整性保护）**，保障硬件级安全与系统稳定性；
+3. **优先纯净、开源与免费**：坚决唾弃充斥流氓弹窗与高昂订阅费的商业清理工具，全面选用社区经过时间检验的高口碑工具；
+4. **声明式与可复现**：配置有迹可循、环境一键恢复，拒绝“重装一次系统配置两整天”。
