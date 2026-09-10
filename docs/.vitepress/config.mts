@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid(
+  defineConfig({
   title: 'mac-guide',
   description: '一套成体系、全场景、现代化的 macOS 实践手册。从小白日常避坑到硬核极客工作流，涵盖外设/影音/游戏/系统维护/现代终端/平铺桌面 (AeroSpace)。',
   base: '/mac-guide/',
@@ -240,3 +242,4 @@ export default defineConfig({
     }
   }
 })
+)
