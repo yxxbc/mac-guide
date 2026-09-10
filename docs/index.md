@@ -45,7 +45,7 @@ features:
     <a href="https://github.com/yxxbc/mac-guide/issues"><img src="https://img.shields.io/badge/Feedback-Issues-blue?style=flat-square&logo=github&logoColor=white" alt="Feedback & Issues" /></a>
     <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
     <a href="https://github.com/yxxbc/mac-guide/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
-    <img src="https://img.shields.io/badge/Docs-45%20Guides-7B2CBF?style=flat-square" alt="Guides" />
+    <img src="https://img.shields.io/badge/Docs-49%20Guides-7B2CBF?style=flat-square" alt="Guides" />
     <img src="https://img.shields.io/badge/Zero--SIP--Disable-100%25-success?style=flat-square" alt="Zero SIP Disable" />
   </p>
 </div>
@@ -84,6 +84,7 @@ mac-guide/
 │   └── battery-aldente.md     # 电池健康长寿秘诀：AlDente 锁电 80% 与电源管理
 ├── 02-media-and-creation/     # 影音娱乐与多媒体创作
 │   ├── video-player-iina.md   # 影音播放器天花板 IINA：HDR、手势与全格式播放
+│   ├── ffmpeg-hardware-acceleration.md # 命令行影音瑞士军刀：ffmpeg + VideoToolbox 硬解硬编
 │   ├── audio-routing.md       # 音频内录与虚拟声卡：BlackHole 录制系统声音与网课
 │   └── screenshot-tools.md    # 截图、长截图、取色与贴图：Shottr 生产力神器
 ├── 03-input-and-fonts/        # 输入法与文字排版
@@ -94,6 +95,7 @@ mac-guide/
 │   └── virtual-machines.md    # 虚拟机方案对比：免费开源 UTM vs 商业 Parallels
 ├── 05-system-maintenance/     # 系统净化与存储维护
 │   ├── system-cleaner.md      # 彻底卸载应用：AppCleaner 拒绝流氓软件
+│   ├── privacy-and-firewall-lulu.md # 隐私防御与流氓拦截：开源防火墙 LuLu 与 TCC 权限解密
 │   ├── storage-rescue.md      # 深度拯救“系统数据”暴增：本地快照与大文件清理
 │   ├── defaults-tuning.md     # defaults 命令行深度配置与优化：原理剖析与反悔复原
 │   └── time-machine-nas.md    # 时间机器全能备份：移动硬盘与 NAS 无线静默备份
@@ -116,6 +118,7 @@ mac-guide/
 │   └── hammerspoon-automation.md # 用 Lua 脚本操纵一切：Hammerspoon 桌面自动化
 ├── 09-workflows-and-tricks/   # 实用技巧与日常维护
 │   ├── network-proxy.md       # macOS 网络代理避坑：终端 proxy 函数与 TUN 模式
+│   ├── touchid-ssh-and-git.md # 硬件级安全与无感认证：Touch ID、Secure Enclave 与 SSH/Git 签名实战
 │   ├── dns-and-hosts.md       # 本地开发域名与 Hosts 管理：避开 .local 陷阱与 SwitchHosts
 │   └── dotfiles-backup.md     # 声明式 Dotfiles 跨机同步：Chezmoi 换机一键还原
 ├── 10-history-and-hardware/   # 硬件全景、机型深度调优与技术演进
@@ -125,7 +128,8 @@ mac-guide/
 └── 11-unix-and-system-internals/ # UNIX 底层机制与硬件极限压榨 (极客与底层探秘)
     ├── xnu-darwin-architecture.md   # XNU 混合内核与 Darwin 架构揭秘 (UNIX认证/Mach微内核/BSD/GCD)
     ├── hardware-squeezing-and-silicon.md # Apple Silicon 硬件极限压榨与异构加速 (统一内存/Media Engine/内存压缩)
-    └── bsd-tools-and-launchd.md     # UNIX 生产力深水区：launchd 调度、BSD 差异与 APFS 写入时复制
+    ├── bsd-tools-and-launchd.md     # UNIX 生产力深水区：launchd 调度、BSD 差异与 APFS 写入时复制
+    └── profiling-and-dtrace.md      # 系统底层诊断与性能剖析：powermetrics、DTrace 与 Instruments 命令行实战
 ```
 
 ---

@@ -92,6 +92,7 @@ export default withMermaid(
             collapsed: false,
             items: [
               { text: '影音播放器天花板：IINA', link: '/02-media-and-creation/video-player-iina' },
+              { text: 'VideoToolbox 硬解硬编：ffmpeg 实战', link: '/02-media-and-creation/ffmpeg-hardware-acceleration' },
               { text: '音频内录与虚拟声卡：BlackHole', link: '/02-media-and-creation/audio-routing' },
               { text: '截图、长截图、取色与贴图：Shottr', link: '/02-media-and-creation/screenshot-tools' }
             ]
@@ -117,6 +118,7 @@ export default withMermaid(
             collapsed: false,
             items: [
               { text: '彻底卸载应用：AppCleaner 拒绝流氓软件', link: '/05-system-maintenance/system-cleaner' },
+              { text: '开源防火墙 LuLu 与 TCC 权限架构解密', link: '/05-system-maintenance/privacy-and-firewall-lulu' },
               { text: '深度拯救“系统数据”暴增与本地快照', link: '/05-system-maintenance/storage-rescue' },
               { text: 'defaults 命令行深度调优', link: '/05-system-maintenance/defaults-tuning' },
               { text: '时间机器全能备份：硬盘与 NAS 无线备份', link: '/05-system-maintenance/time-machine-nas' }
@@ -165,6 +167,7 @@ export default withMermaid(
             collapsed: false,
             items: [
               { text: 'macOS 网络代理避坑与 TUN 模式', link: '/09-workflows-and-tricks/network-proxy' },
+              { text: 'Touch ID 与 Secure Enclave 硬件签名', link: '/09-workflows-and-tricks/touchid-ssh-and-git' },
               { text: '本地开发域名与 Hosts 管理 (.local避坑)', link: '/09-workflows-and-tricks/dns-and-hosts' },
               { text: '声明式 Dotfiles 跨机同步：Chezmoi', link: '/09-workflows-and-tricks/dotfiles-backup' }
             ]
@@ -196,7 +199,8 @@ export default withMermaid(
             items: [
               { text: 'XNU 混合内核与 Darwin 架构揭秘', link: '/11-unix-and-system-internals/xnu-darwin-architecture' },
               { text: 'Apple Silicon 硬件极限压榨与异构加速', link: '/11-unix-and-system-internals/hardware-squeezing-and-silicon' },
-              { text: 'UNIX 生产力深水区：launchd 与 APFS', link: '/11-unix-and-system-internals/bsd-tools-and-launchd' }
+              { text: 'UNIX 生产力深水区：launchd 与 APFS', link: '/11-unix-and-system-internals/bsd-tools-and-launchd' },
+              { text: '系统底层诊断：powermetrics 与 DTrace', link: '/11-unix-and-system-internals/profiling-and-dtrace' }
             ]
           }
         ]
