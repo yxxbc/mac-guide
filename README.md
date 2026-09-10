@@ -9,7 +9,7 @@
 
   <p>
     <a href="https://yxxbc.github.io/mac-guide/"><img src="https://img.shields.io/badge/Online%20Docs-VitePress-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Online Docs" /></a>
-    <a href="https://linux.do"><img src="https://img.shields.io/badge/LinuxDo-社区-4FC08D?style=flat-square&logo=linux&logoColor=white" alt="LinuxDo" /></a>
+    <a href="https://github.com/yxxbc/mac-guide/issues"><img src="https://img.shields.io/badge/Feedback-Issues-blue?style=flat-square&logo=github&logoColor=white" alt="Feedback & Issues" /></a>
     <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
     <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
     <img src="https://img.shields.io/badge/Docs-45%20Guides-7B2CBF?style=flat-square" alt="Guides" />
@@ -21,7 +21,7 @@
     <a href="#-全景文档导航"><strong>探索文档</strong></a> •
     <a href="#-选型与编撰准则"><strong>选型准则</strong></a> •
     <a href="#-快速上手路线推荐"><strong>上手路线</strong></a> •
-    <a href="https://linux.do"><strong>Linux.do 讨论区</strong></a>
+    <a href="https://github.com/yxxbc/mac-guide/issues"><strong>💬 讨论与反馈</strong></a>
   </p>
 
 </div>
@@ -64,14 +64,14 @@
 
 ## 📖 全景文档导航
 
-全部 45 篇深度实战文档均位于 [`docs/`](./docs/index.md) 目录，结构如下：
+全部 44 篇深度实战文档均位于 [`docs/`](./docs/index.md) 目录，结构如下：
 
 ### 第一部分：新手起步、日常办公与多媒体
 
 | 模块 | 核心文档 | 亮点与解决痛点 |
 | :--- | :--- | :--- |
 | **00. 新手入门** | [概念重塑与避坑指南](./docs/00-beginner-guide/windows-to-mac.md)<br>[系统初始化与安全边界](./docs/00-beginner-guide/initial-setup.md)<br>[神奇的空格键 Quick Look](./docs/00-beginner-guide/quick-look.md)<br>[日常轻量分屏 Rectangle](./docs/00-beginner-guide/window-snapping.md)<br>[解压乱码救星 Keka](./docs/00-beginner-guide/office-essentials.md)<br>[跨设备生态与 LocalSend](./docs/00-beginner-guide/continuity-and-handoff.md) | • 红黄绿真正生命周期模型<br>• 为什么没有剪切？`Cmd+Opt+V` 移动文件<br>• 触控板三指拖移黄金设置<br>• 任何来源与 Gatekeeper 绕过<br>• 空格预览增强（代码高亮/MD/JSON）<br>• 彻底终结 Windows 压缩包中文乱码<br>• 通用剪贴板、连续互通与跨端局域网传输 |
-| **01. 硬件外设与屏幕** | [内置屏幕色彩调优与预设](./docs/01-hardware-and-display/built-in-display-color.md)<br>[外接显示器 HiDPI 避坑](./docs/01-hardware-and-display/external-displays.md)<br>[移动硬盘 NTFS 无法写入](./docs/01-hardware-and-display/ntfs-and-disks.md)<br>[键位与外接鼠标体验修复](./docs/01-hardware-and-display/input-and-mouse.md)<br>[MacBook 电池长寿秘诀](./docs/01-hardware-and-display/battery-aldente.md) | • Liquid Retina XDR Mini-LED 原厂预设选型<br>• 告别偏色：解决 P3 vs sRGB 发灰与 QT 伽马漂移<br>• True Tone 原彩开关时机与硬件级微调校准<br>• BetterDisplay 强开 2K/4K 原生 HiDPI<br>• 原生键盘调节第三方显示器背光/音量<br>• 跨平台 exFAT 格式化最佳实践<br>• MOS 独立控制鼠标滚轮平滑与方向<br>• AlDente 80% 物理锁电与直通供电防鼓包 |
+| **01. 硬件外设** | [外接显示器 HiDPI 避坑](./docs/01-hardware-and-display/external-displays.md)<br>[移动硬盘 NTFS 无法写入](./docs/01-hardware-and-display/ntfs-and-disks.md)<br>[键位与外接鼠标体验修复](./docs/01-hardware-and-display/input-and-mouse.md)<br>[MacBook 电池长寿秘诀](./docs/01-hardware-and-display/battery-aldente.md) | • BetterDisplay 强开 2K/4K 原生 HiDPI<br>• 原生键盘调节第三方显示器背光/音量<br>• 跨平台 exFAT 格式化最佳实践<br>• MOS 独立控制鼠标滚轮平滑与方向<br>• AlDente 80% 物理锁电与直通供电防鼓包 |
 | **02. 影音创作** | [影音播放器天花板 IINA](./docs/02-media-and-creation/video-player-iina.md)<br>[音频内录与虚拟声卡 BlackHole](./docs/02-media-and-creation/audio-routing.md)<br>[截图长截图与贴图 Shottr](./docs/02-media-and-creation/screenshot-tools.md) | • mpv 内核全格式硬解与 Liquid Retina XDR 映射<br>• 多输出设备实现电脑内部声音无损内录<br>• 极速滚动长截图、离线毫秒级 OCR 与贴图置顶 |
 | **03. 输入排版** | [输入法大升级与自动切换](./docs/03-input-and-fonts/input-methods.md)<br>[字体排版与终端渲染美化](./docs/03-input-and-fonts/typography-fonts.md) | • Input Source Pro 针对特定软件秒切中英文<br>• Rime 鼠须管雾凇拼音完全离线词库<br>• 更纱黑体解决中英文等宽表格撕裂错位 |
 | **04. 兼容游戏** | [Apple Silicon 玩 Windows 游戏](./docs/04-windows-and-gaming/whisky-gaming.md)<br>[虚拟机方案 UTM vs Parallels](./docs/04-windows-and-gaming/virtual-machines.md) | • Whisky + Apple GPTK (D3DMetal) 翻译层<br>• 免装虚拟机畅玩 Windows Steam 3A 游戏<br>• 开源 UTM 免费一键部署 Windows 11 ARM |
@@ -115,11 +115,13 @@
 
 ---
 
-## 🤝 社区讨论与共建
+## 🤝 参与讨论与共建
 
-欢迎加入 **[Linux.do 社区](https://linux.do)** 参与讨论交流与反馈！
+如果你在使用过程中发现任何问题、发现了最新 macOS 版本的系统变更，或者有更好的配置思路和冷门神器补充，欢迎通过以下方式参与：
 
-如果你有更好的配置思路、发现了最新 macOS 版本的系统变更，或者想补充冷门神器，欢迎提交 Issue 或 Pull Request 共建维护！
+- 💬 **[GitHub Issues](https://github.com/yxxbc/mac-guide/issues)**：提交反馈、报错排坑或提出新需求；
+- 💡 **[Pull Requests](https://github.com/yxxbc/mac-guide/pulls)**：直接贡献你的最佳实践与排版优化；
+- 🌐 **[在线文档](https://yxxbc.github.io/mac-guide/)**：享受基于 VitePress 的极致搜索与阅读体验。
 
 ## 📄 开源许可证
 

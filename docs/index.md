@@ -16,7 +16,7 @@ hero:
       text: 💻 硬件选购与调优
       link: /10-history-and-hardware/hardware-lineup-guide
     - theme: alt
-      text: ⭐️ GitHub 仓库
+      text: ⭐ GitHub 仓库
       link: https://github.com/yxxbc/mac-guide
 
 features:
@@ -42,7 +42,7 @@ features:
 
 <div align="center" style="margin-top: 2rem;">
   <p>
-    <a href="https://linux.do"><img src="https://img.shields.io/badge/LinuxDo-社区-4FC08D?style=flat-square&logo=linux&logoColor=white" alt="LinuxDo" /></a>
+    <a href="https://github.com/yxxbc/mac-guide/issues"><img src="https://img.shields.io/badge/Feedback-Issues-blue?style=flat-square&logo=github&logoColor=white" alt="Feedback & Issues" /></a>
     <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
     <a href="https://github.com/yxxbc/mac-guide/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
     <img src="https://img.shields.io/badge/Docs-45%20Guides-7B2CBF?style=flat-square" alt="Guides" />
@@ -75,7 +75,7 @@ mac-guide/
 │   ├── quick-look.md          # 神奇的空格键：Quick Look 预览增强全家桶
 │   ├── window-snapping.md     # 日常轻量分屏：Rectangle 与原生窗口吸附
 │   ├── office-essentials.md   # 解压乱码救星 Keka 与原生办公高阶技巧
-│   └── continuity-and-handoff.md # 跨设备生态互联：接力、隔空投送与 LocalSend
+│   └── continuity-and-handoff.md # 跨设备生态互联：接力、隔空投放与 LocalSend
 ├── 01-hardware-and-display/   # 硬件外设与屏幕显示（痛点高发区）
 │   ├── built-in-display-color.md # 内置屏幕色彩调优：Color Presets 预设与色彩管理实战
 │   ├── external-displays.md   # 外接显示器避坑：HiDPI发虚、DDC硬件调光与 BetterDisplay
@@ -93,7 +93,7 @@ mac-guide/
 │   ├── whisky-gaming.md       # Apple Silicon 玩 Windows 游戏：Whisky + Apple GPTK 实战
 │   └── virtual-machines.md    # 虚拟机方案对比：免费开源 UTM vs 商业 Parallels
 ├── 05-system-maintenance/     # 系统净化与存储维护
-│   ├── system-cleaner.md      # 彻底卸载应用：AppCleaner 拒绝流氓清理软件
+│   ├── system-cleaner.md      # 彻底卸载应用：AppCleaner 拒绝流氓软件
 │   ├── storage-rescue.md      # 深度拯救“系统数据”暴增：本地快照与大文件清理
 │   ├── defaults-tuning.md     # defaults 命令行深度配置与优化：原理剖析与反悔复原
 │   └── time-machine-nas.md    # 时间机器全能备份：移动硬盘与 NAS 无线静默备份
@@ -132,7 +132,7 @@ mac-guide/
 
 ## 核心设计原则
 
-1. **坚持授人以渔，拒绝黑盒脚本**：每一个配置命令都带详细注释、原理解释与恢复命令（反悔药），绝不给出一键黑盒脚本盲目执行；
+1. **坚持授人以渔，拒绝黑盒脚本**：每一个配置命令都带详细注释、原理解释与恢复命令（反悔药），绝不给出一步黑盒脚本盲目执行；
 2. **严守安全与原厂标准**：全面基于 Apple Silicon 硬件与现代 macOS 体系，**坚决不破环 SIP（系统完整性保护）**，保障硬件级安全与系统稳定性；
 3. **深入浅出，通俗易懂**：无论是视网膜 HiDPI 超采样还是 XNU 混合内核，均配以直观通俗的原理解析，让新手与小白也能轻松看懂；
 4. **优先纯净、开源与免费**：坚决唾弃充斥流氓弹窗与高昂订阅费的商业清理工具，全面选用社区经过时间检验的高口碑工具；

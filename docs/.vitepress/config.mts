@@ -4,7 +4,7 @@ import { withMermaid } from 'vitepress-plugin-mermaid'
 export default withMermaid(
   defineConfig({
   title: 'mac-guide',
-  description: '一套成体系、全场景、现代化的 macOS 实践手册。从小白日常避坑到硬核极客工作流，涵盖外设/影音/游戏/系统维护/现代终端/平铺桌面 (AeroSpace)。',
+  description: '一套体系、全场景、现代化的 macOS 实践手册。从小白日常避坑到硬核极客工作流，涵盖外设/影音/游戏/系统维护/现代终端/平铺桌面 (AeroSpace)。',
   base: '/mac-guide/',
   lang: 'zh-CN',
   lastUpdated: true,
@@ -56,7 +56,7 @@ export default withMermaid(
           { text: '11. launchd 与 APFS 机制', link: '/11-unix-and-system-internals/bsd-tools-and-launchd' }
         ]
       },
-      { text: '🐧 LinuxDo', link: 'https://linux.do' }
+      { text: '💬 讨论与反馈', link: 'https://github.com/yxxbc/mac-guide/issues' }
     ],
 
     sidebar: [
@@ -257,7 +257,7 @@ export default withMermaid(
 
     footer: {
       message: '遵循 MIT 协议开源 | Powered by VitePress',
-      copyright: 'Copyright © 2026 yxxbc & LinuxDo 社区'
+      copyright: 'Copyright © 2026 yxxbc'
     }
   }
 })
