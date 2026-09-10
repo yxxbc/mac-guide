@@ -16,7 +16,7 @@
     "homebrew"
   ],
   "author": "yxxbc",
-  "license": "MIT",
+  "license": "CC-BY-NC-ND-4.0",
   "type": "module",
   "devDependencies": {
     "mermaid": "^11.17.2",

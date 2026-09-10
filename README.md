@@ -11,7 +11,7 @@
     <a href="https://yxxbc.github.io/mac-guide/"><img src="https://img.shields.io/badge/Online%20Docs-VitePress-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Online Docs" /></a>
     <a href="https://github.com/yxxbc/mac-guide/issues"><img src="https://img.shields.io/badge/Feedback-Issues-blue?style=flat-square&logo=github&logoColor=white" alt="Feedback & Issues" /></a>
     <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
-    <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
+    <a href="./LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey?style=flat-square&logo=creative-commons" alt="License: CC BY-NC-ND 4.0" /></a>
     <img src="https://img.shields.io/badge/Docs-49%20Guides-7B2CBF?style=flat-square" alt="Guides" />
     <img src="https://img.shields.io/badge/Zero--SIP--Disable-100%25-success?style=flat-square" alt="Zero SIP Disable" />
   </p>
@@ -74,7 +74,7 @@
 | **06. 包管理底座**| [Homebrew 现代化管理体系](./docs/06-package-management/homebrew.md)<br>[Xcode 命令行工具 (CLT) 极简安装](./docs/06-package-management/xcode-clt.md)<br>[Apple Silicon 双架构开发隔离](./docs/06-package-management/arm64-and-rosetta.md)<br>[现代运行时管理神器 mise](./docs/06-package-management/runtime-mise.md)<br>[轻量容器化方案 OrbStack](./docs/06-package-management/containers.md) | • 国内清华镜像源极速配置与 `Brewfile` 一键还原<br>• 拒绝 40GB 庞大 Xcode，CLT 极简安装与更新避坑<br>• Rosetta 2 与 arm64/x86 隔离，彻底解决 C/C++ 头文件路径缺失<br>• 一个二进制管理 Node/Py/Go/Rust，0ms 启动<br>• 淘汰臃肿 Docker Desktop，仅耗 100MB 内存 |
 | **07. 现代终端** | [GPU 加速终端 Ghostty / Kitty](./docs/07-terminal-and-cli/terminal-emulators.md)<br>[Shell 与 Starship 极速提示符](./docs/07-terminal-and-cli/shell-and-prompt.md)<br>[现代 CLI 全家桶替代表](./docs/07-terminal-and-cli/modern-unix-tools.md)<br>[终端 Rice 与 fastfetch 看板](./docs/07-terminal-and-cli/fastfetch-rice.md) | • 120Hz 高刷 Metal 渲染与 Nerd Fonts 字体<br>• 弃用臃肿 Oh-My-Zsh，启动延迟压制在 30ms 内<br>• `eza` / `zoxide` / `bat` / `ripgrep` / `delta` 全面替换<br>• 自适应宽度防爆框终端看板 `myfastfetch` |
 | **08. 平铺桌面** | [免关 SIP 平铺利器 AeroSpace](./docs/08-tiling-and-desktop/aerospace.md)<br>[窗口活动边框 JankyBorders](./docs/08-tiling-and-desktop/borders-and-bar.md)<br>[效率中枢 Raycast 深度配置](./docs/08-tiling-and-desktop/launcher-raycast.md)<br>[Karabiner 与 Hyper 超级键](./docs/08-tiling-and-desktop/karabiner-hyper.md)<br>[Lua 桌面自动化 Hammerspoon](./docs/08-tiling-and-desktop/hammerspoon-automation.md) | • **100% 免关 SIP** 的 i3 树形平铺，工作区毫秒瞬切<br>• 活动窗口彩色焦点高亮边框<br>• 替代 Spotlight，集成剪贴板/代码片段/Kill 进程<br>• Caps Lock 改造成 Hyper 键 (Cmd+Ctrl+Opt+Shift)<br>• 防社死拔耳机自动静音、Wi-Fi 感知自动化 |
-| **09. 技巧维护** | [macOS 网络代理避坑指南](./docs/09-workflows-and-tricks/network-proxy.md)<br>[Touch ID 与硬件密钥签名实战](./docs/09-workflows-and-tricks/touchid-ssh-and-git.md)<br>[本地开发域名与 Hosts 管理](./docs/09-workflows-and-tricks/dns-and-hosts.md)<br>[声明式 Dotfiles 跨机同步](./docs/09-workflows-and-tricks/dotfiles-backup.md) | • 终端 `proxy/unproxy` 函数与 TUN 虚拟网卡排坑<br>• Secure Enclave 硬件隔离私钥不可导出、Touch ID 指纹秒验、SSH 签名全面替代 GPG<br>• 避开 `.local` 多播 DNS 5秒超时大坑与 SwitchHosts<br>• Chezmoi 纳管全部配置，新机 5 分钟满血复活 |
+| **09. 技巧维护** | [macOS 网络代理避坑指南](./docs/09-workflows-and-tricks/network-proxy.md)<br>[Touch ID 与硬件密钥签名实战](./docs/09-workflows-and-tricks/touchid-ssh-and-git.md)<br>[本地开发域名与 Hosts 管理](./docs/09-workflows-and-tricks/dns-and-hosts.md)<br>[声明式 Dotfiles 跨机同步](./docs/09-workflows-and-tricks/dotfiles-backup.md) | • 终端 `proxy/unproxy` 函数与 TUN 虚拟网卡排坑<br>• 避开 `.local` 多播 DNS 5秒超时大坑与 SwitchHosts<br>• Secure Enclave 硬件隔离私钥不可导出、Touch ID 指纹秒验、SSH 签名全面替代 GPG<br>• Chezmoi 纳管全部配置，新机 5 分钟满血复活 |
 
 ### 第三部分：硬件全景、机型深度调优与技术演进
 
@@ -137,9 +137,15 @@
 
 ---
 
-## 📄 开源许可证
+## 📄 知识产权与许可证
 
-本项目遵循 [MIT 许可证](./LICENSE) 开源。
+本项目文档与内容遵循 **[CC BY-NC-ND 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)** (署名-非商业性使用-禁止演绎 4.0 国际) 授权：
+
+- **署名 (Attribution)**：必须给出适当署名，提供指向本项目的链接；
+- **非商业性使用 (NonCommercial)**：不得将本项目内容用于任何商业目的；
+- **禁止演绎 (NoDerivatives)**：如果再混合、转换或基于本项目内容创作，不得向外分发修改后的内容。
+
+详细条款请参阅本地 [LICENSE](./LICENSE) 文件或 [Creative Commons 官方契约](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)。
 
 <div align="center">
   <sub>Made with ❤️ for macOS power users and newcomers alike.</sub>

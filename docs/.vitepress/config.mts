@@ -260,8 +260,8 @@ export default withMermaid(
     },
 
     footer: {
-      message: '遵循 MIT 协议开源 | Powered by VitePress',
-      copyright: 'Copyright © 2026 yxxbc'
+      message: '遵循 CC BY-NC-ND 4.0 国际许可协议保护 | Powered by VitePress',
+      copyright: 'Copyright © 2026 yxxbc & mac-guide contributors'
     }
   }
 })

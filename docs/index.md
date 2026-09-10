@@ -44,7 +44,7 @@ features:
   <p>
     <a href="https://github.com/yxxbc/mac-guide/issues"><img src="https://img.shields.io/badge/Feedback-Issues-blue?style=flat-square&logo=github&logoColor=white" alt="Feedback & Issues" /></a>
     <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
-    <a href="https://github.com/yxxbc/mac-guide/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
+    <a href="https://github.com/yxxbc/mac-guide/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey?style=flat-square&logo=creative-commons" alt="License: CC BY-NC-ND 4.0" /></a>
     <img src="https://img.shields.io/badge/Docs-49%20Guides-7B2CBF?style=flat-square" alt="Guides" />
     <img src="https://img.shields.io/badge/Zero--SIP--Disable-100%25-success?style=flat-square" alt="Zero SIP Disable" />
   </p>
@@ -118,7 +118,7 @@ mac-guide/
 │   └── hammerspoon-automation.md # 用 Lua 脚本操纵一切：Hammerspoon 桌面自动化
 ├── 09-workflows-and-tricks/   # 实用技巧与日常维护
 │   ├── network-proxy.md       # macOS 网络代理避坑：终端 proxy 函数与 TUN 模式
-│   ├── touchid-ssh-and-git.md # 硬件级安全与无感认证：Touch ID、Secure Enclave 与 SSH/Git 签名实战
+│   ├── touchid-ssh-and-git.md # Secure Enclave 硬件级保护：Touch ID SSH 认证与 Git 提交签名
 │   ├── dns-and-hosts.md       # 本地开发域名与 Hosts 管理：避开 .local 陷阱与 SwitchHosts
 │   └── dotfiles-backup.md     # 声明式 Dotfiles 跨机同步：Chezmoi 换机一键还原
 ├── 10-history-and-hardware/   # 硬件全景、机型深度调优与技术演进
@@ -129,7 +129,7 @@ mac-guide/
     ├── xnu-darwin-architecture.md   # XNU 混合内核与 Darwin 架构揭秘 (UNIX认证/Mach微内核/BSD/GCD)
     ├── hardware-squeezing-and-silicon.md # Apple Silicon 硬件极限压榨与异构加速 (统一内存/Media Engine/内存压缩)
     ├── bsd-tools-and-launchd.md     # UNIX 生产力深水区：launchd 调度、BSD 差异与 APFS 写入时复制
-    └── profiling-and-dtrace.md      # 系统底层诊断与性能剖析：powermetrics、DTrace 与 Instruments 命令行实战
+    └── profiling-and-dtrace.md      # 系统底层诊断与性能剖析：powermetrics 遥测、DTrace 与 xctrace
 ```
 
 ---
