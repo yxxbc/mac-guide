@@ -64,10 +64,14 @@ mac-guide/
 │   ├── launcher-raycast.md    # 效率中枢 Raycast：深度配置与工作流
 │   ├── karabiner-hyper.md     # Karabiner-Elements 与 Hyper 超级键 (Caps Lock 改造)
 │   └── hammerspoon-automation.md # 用 Lua 脚本操纵一切：Hammerspoon 桌面自动化
-└── 09-workflows-and-tricks/   # 实用技巧与日常维护
-    ├── network-proxy.md       # macOS 网络代理避坑：终端 proxy 函数与 TUN 模式
-    ├── dns-and-hosts.md       # 本地开发域名与 Hosts 管理：避开 .local 陷阱与 SwitchHosts
-    └── dotfiles-backup.md     # 声明式 Dotfiles 跨机同步：Chezmoi 换机一键还原
+├── 09-workflows-and-tricks/   # 实用技巧与日常维护
+│   ├── network-proxy.md       # macOS 网络代理避坑：终端 proxy 函数与 TUN 模式
+│   ├── dns-and-hosts.md       # 本地开发域名与 Hosts 管理：避开 .local 陷阱与 SwitchHosts
+│   └── dotfiles-backup.md     # 声明式 Dotfiles 跨机同步：Chezmoi 换机一键还原
+└── 10-history-and-hardware/   # 硬件全景、机型调教与技术演进
+    ├── mac-history-and-evolution.md # Mac 发展史与架构演变：从 1984 到 Apple Silicon 革命
+    ├── hardware-lineup-guide.md     # Mac 全系列机型解析与选购避坑指南 (内存/外接屏/SSD)
+    └── model-specific-tuning.md     # 特定机型专属调教：Air控温/Pro刘海/mini无头服务器
 ```
 
 ---

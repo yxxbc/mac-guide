@@ -11,7 +11,7 @@
     <a href="https://linux.do"><img src="https://img.shields.io/badge/LinuxDo-社区-4FC08D?style=flat-square&logo=linux&logoColor=white" alt="LinuxDo" /></a>
     <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
     <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
-    <img src="https://img.shields.io/badge/Docs-38%20Guides-7B2CBF?style=flat-square" alt="Guides" />
+    <img src="https://img.shields.io/badge/Docs-41%20Guides-7B2CBF?style=flat-square" alt="Guides" />
     <img src="https://img.shields.io/badge/Zero--SIP--Disable-100%25-success?style=flat-square" alt="Zero SIP Disable" />
   </p>
 
@@ -83,12 +83,20 @@
 | **08. 平铺桌面** | [免关 SIP 平铺利器 AeroSpace](./docs/08-tiling-and-desktop/aerospace.md)<br>[窗口活动边框 JankyBorders](./docs/08-tiling-and-desktop/borders-and-bar.md)<br>[效率中枢 Raycast 深度配置](./docs/08-tiling-and-desktop/launcher-raycast.md)<br>[Karabiner 与 Hyper 超级键](./docs/08-tiling-and-desktop/karabiner-hyper.md)<br>[Lua 桌面自动化 Hammerspoon](./docs/08-tiling-and-desktop/hammerspoon-automation.md) | • **100% 免关 SIP** 的 i3 树形平铺，工作区毫秒瞬切<br>• 活动窗口彩色焦点高亮边框<br>• 替代 Spotlight，集成剪贴板/代码片段/Kill 进程<br>• Caps Lock 改造成 Hyper 键 (Cmd+Ctrl+Opt+Shift)<br>• 防社死拔耳机自动静音、Wi-Fi 感知自动化 |
 | **09. 技巧维护** | [macOS 网络代理避坑指南](./docs/09-workflows-and-tricks/network-proxy.md)<br>[本地开发域名与 Hosts 管理](./docs/09-workflows-and-tricks/dns-and-hosts.md)<br>[声明式 Dotfiles 跨机同步](./docs/09-workflows-and-tricks/dotfiles-backup.md) | • 终端 `proxy/unproxy` 函数与 TUN 虚拟网卡排坑<br>• 避开 `.local` 多播 DNS 5秒超时大坑与 SwitchHosts<br>• Chezmoi 纳管全部配置，新机 5 分钟满血复活 |
 
+### 第三部分：硬件全景、机型专属调教与技术演进
+
+| 模块 | 核心文档 | 亮点与解决痛点 |
+| :--- | :--- | :--- |
+| **10. 硬件与演进** | [Mac 40年发展史与架构演变](./docs/10-history-and-hardware/mac-history-and-evolution.md)<br>[全系列机型解析与选购避坑](./docs/10-history-and-hardware/hardware-lineup-guide.md)<br>[特定机型专属深度调教](./docs/10-history-and-hardware/model-specific-tuning.md) | • 从 1984 Macintosh 到 Apple Silicon 三次大迁徙与 Unix 基因<br>• 统一内存玄机、外接双屏/MST雷区、SSD降速门与选购决策树<br>• Air 低电量模式控温、Pro 刘海隐藏/120Hz、Mac mini 无头假负载/防休眠 |
+
 ---
 
 ## 🚀 快速上手路线推荐
 
 - **我是 Mac 新手 / 刚从 Windows 换过来**：
   建议按照 `00. 新手入门` ➡️ `01. 硬件外设` ➡️ `02. 影音创作` 顺序阅读，半小时内把常用阻碍（发虚、乱码、滚轮、剪切）彻底扫清。
+- **我想买 Mac / 纠结配置选型 / 想挖掘机型潜力**：
+  先读 [全系列机型解析与选购避坑](./docs/10-history-and-hardware/hardware-lineup-guide.md) 防踩内存与多屏坑，再读 [特定机型专属深度调教](./docs/10-history-and-hardware/model-specific-tuning.md) 压榨硬件潜能。
 - **我是办公人群 / 创作者**：
   重点阅读 [Shottr 截图标注](./docs/02-media-and-creation/screenshot-tools.md)、[BlackHole 音频内录](./docs/02-media-and-creation/audio-routing.md)、[Keka 办公解压](./docs/00-beginner-guide/office-essentials.md) 与 [跨设备互联](./docs/00-beginner-guide/continuity-and-handoff.md)。
 - **我是程序员 / Linux 极客**：
