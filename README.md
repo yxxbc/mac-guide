@@ -5,21 +5,21 @@
   # macOS 现代全景配置指南
   ### Modern macOS Power-User & Everyday Guide
 
-  <p><b>从小白日常避坑到硬核极客工作流，一份成体系、讲原理解释、现代化的 macOS 实战手册</b></p>
+  <p><b>从小白日常避坑到硬核极客工作流，一份成体系、讲原理视界、现代化的 macOS 实战手册</b></p>
 
   <p>
     <a href="https://yxxbc.github.io/mac-guide/"><img src="https://img.shields.io/badge/Online%20Docs-VitePress-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Online Docs" /></a>
     <a href="https://linux.do"><img src="https://img.shields.io/badge/LinuxDo-社区-4FC08D?style=flat-square&logo=linux&logoColor=white" alt="LinuxDo" /></a>
     <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
     <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
-    <img src="https://img.shields.io/badge/Docs-44%20Guides-7B2CBF?style=flat-square" alt="Guides" />
+    <img src="https://img.shields.io/badge/Docs-45%20Guides-7B2CBF?style=flat-square" alt="Guides" />
     <img src="https://img.shields.io/badge/Zero--SIP--Disable-100%25-success?style=flat-square" alt="Zero SIP Disable" />
   </p>
 
   <p>
     <a href="https://yxxbc.github.io/mac-guide/"><strong>🌐 在线阅读 (GitHub Pages)</strong></a> •
     <a href="#-全景文档导航"><strong>探索文档</strong></a> •
-    <a href="#-核心设计哲学"><strong>核心哲学</strong></a> •
+    <a href="#-选型与编撰准则"><strong>选型准则</strong></a> •
     <a href="#-快速上手路线推荐"><strong>上手路线</strong></a> •
     <a href="https://linux.do"><strong>Linux.do 讨论区</strong></a>
   </p>
@@ -41,38 +41,37 @@
 
 ---
 
-## 💡 核心设计哲学
+## 💡 选型与编撰准则
 
 ```
     ┌─────────────────────────────────────────────────────────────────────────┐
-    │                           mac-guide 设计基石                            │
+    │                      mac-guide 选型与编撰准则                            │
     └──────┬────────────────────┬────────────────────┬────────────────────┬───┘
            │                    │                    │                    │
   ┌────────┴────────┐  ┌────────┴────────┐  ┌────────┴────────┐  ┌────────┴────────┐
-  │ 🛡️ 零安全妥协   │  │ 💡 授人以渔     │  │ ⚡ 极速与原生   │  │ 📜 声明式复现   │
-  │ 坚决不关 SIP    │  │ 拒绝黑盒脚本    │  │ GPU硬件加速终端 │  │ Brewfile 一键   │
-  │ 保留原厂安全    │  │ 参数逐行讲透    │  │ 淘汰DockerDesktop│  │ Chezmoi配置同步 │
+  │ 🛡️ 原厂级安全   │  │ 💡 底层原理透视 │  │ ⚡ 轻量高能效   │  │ 🎯 体验优先原则 │
+  │ 坚决不破坏 SIP  │  │ 拒绝盲盒脚本    │  │ 告别笨重与臃肿  │  │ 拒绝流氓与常驻  │
+  │ 保障系统原汁原味│  │ 必须配反悔药    │  │ 榨干硬件潜能    │  │ 严格甄选好口碑  │
   └─────────────────┘  └─────────────────┘  └─────────────────┘  └─────────────────┘
 ```
 
-1. **拒绝黑盒脚本，坚持授人以渔**：不提供盲目的一键式命令；所有配置脚本均拆解讲述原理，并提供原厂恢复的“反悔药”命令，教你亲手掌控自己的设备；
-2. **全场景人群覆盖**：从纯新手开箱习惯重塑、外接硬件排坑、多媒体视听与游戏，到高阶平铺桌面和现代 CLI 工具链无缝衔接；
-3. **绝对安全与原生标准**：全面基于 Apple Silicon 硬件与现代 macOS 体系，**坚决不破环 SIP（系统完整性保护）**，保障硬件级安全与系统稳定性；
-4. **拥抱纯净开源，杜绝流氓软件**：坚决唾弃充斥后台弹窗与高额订阅费的商业清理工具，全面选用社区久经考验的高口碑开源方案；
-5. **深入浅出，揭示硬核底层**：剖析 XNU 混合内核、POSIX 标准兼容、统一内存零拷贝机制，让高深的技术原理变得生动好懂。
+1. **🛡️ 原厂级安全，零破坏性妥协**：全面拥抱现代 Apple Silicon 规范与 macOS 安全沙箱，**坚决不碰 SIP（系统完整性保护）**。拒绝通过越狱式魔改（如注入 Finder、打底层内核补丁）换取功能，确保系统随时能够平滑无缝升级大版本；
+2. **💡 底层透视，透明且标配“反悔药”**：坚决拒绝“黑盒盲盒式一键脚本”。所有终端命令、`defaults` 调优和环境变量配置，均逐行拆解底层触发原理，并严格配套原厂默认恢复命令（反悔药），让你清楚明白系统改动的每一处细节；
+3. **⚡ 轻量高能效，物尽其用**：摒弃笨重的 Electron 套壳工具与高能耗后台常驻，优先选用基于 GPU/Metal 硬件加速、原生 Swift/Rust 构建的高效工具，充分利用统一内存 (UMA) 与专用硬件引擎，实现 0 延迟、长续航与极致流畅；
+4. **🎯 体验与尊重优先，拒绝流氓与臃肿**：不搞偏激的开源教条，以真正解决用户痛点为第一出发点。严厉抵制后台弹窗、流氓常驻与高昂订阅绑架的商业清理工具；无论是优质开源项目还是独立精品软件，唯有克制、干净、尊重用户的方案方可入选。
 
 ---
 
 ## 📖 全景文档导航
 
-全部 44 篇深度实战文档均位于 [`docs/`](./docs/index.md) 目录，结构如下：
+全部 45 篇深度实战文档均位于 [`docs/`](./docs/index.md) 目录，结构如下：
 
 ### 第一部分：新手起步、日常办公与多媒体
 
 | 模块 | 核心文档 | 亮点与解决痛点 |
 | :--- | :--- | :--- |
 | **00. 新手入门** | [概念重塑与避坑指南](./docs/00-beginner-guide/windows-to-mac.md)<br>[系统初始化与安全边界](./docs/00-beginner-guide/initial-setup.md)<br>[神奇的空格键 Quick Look](./docs/00-beginner-guide/quick-look.md)<br>[日常轻量分屏 Rectangle](./docs/00-beginner-guide/window-snapping.md)<br>[解压乱码救星 Keka](./docs/00-beginner-guide/office-essentials.md)<br>[跨设备生态与 LocalSend](./docs/00-beginner-guide/continuity-and-handoff.md) | • 红黄绿真正生命周期模型<br>• 为什么没有剪切？`Cmd+Opt+V` 移动文件<br>• 触控板三指拖移黄金设置<br>• 任何来源与 Gatekeeper 绕过<br>• 空格预览增强（代码高亮/MD/JSON）<br>• 彻底终结 Windows 压缩包中文乱码<br>• 通用剪贴板、连续互通与跨端局域网传输 |
-| **01. 硬件外设** | [外接显示器 HiDPI 避坑](./docs/01-hardware-and-display/external-displays.md)<br>[移动硬盘 NTFS 无法写入](./docs/01-hardware-and-display/ntfs-and-disks.md)<br>[键位与外接鼠标体验修复](./docs/01-hardware-and-display/input-and-mouse.md)<br>[MacBook 电池长寿秘诀](./docs/01-hardware-and-display/battery-aldente.md) | • BetterDisplay 强开 2K/4K 原生 HiDPI<br>• 原生键盘调节第三方显示器背光/音量<br>• 跨平台 exFAT 格式化最佳实践<br>• MOS 独立控制鼠标滚轮平滑与方向<br>• AlDente 80% 物理锁电与直通供电防鼓包 |
+| **01. 硬件外设与屏幕** | [内置屏幕色彩调优与预设](./docs/01-hardware-and-display/built-in-display-color.md)<br>[外接显示器 HiDPI 避坑](./docs/01-hardware-and-display/external-displays.md)<br>[移动硬盘 NTFS 无法写入](./docs/01-hardware-and-display/ntfs-and-disks.md)<br>[键位与外接鼠标体验修复](./docs/01-hardware-and-display/input-and-mouse.md)<br>[MacBook 电池长寿秘诀](./docs/01-hardware-and-display/battery-aldente.md) | • Liquid Retina XDR Mini-LED 原厂预设选型<br>• 告别偏色：解决 P3 vs sRGB 发灰与 QT 伽马漂移<br>• True Tone 原彩开关时机与硬件级微调校准<br>• BetterDisplay 强开 2K/4K 原生 HiDPI<br>• 原生键盘调节第三方显示器背光/音量<br>• 跨平台 exFAT 格式化最佳实践<br>• MOS 独立控制鼠标滚轮平滑与方向<br>• AlDente 80% 物理锁电与直通供电防鼓包 |
 | **02. 影音创作** | [影音播放器天花板 IINA](./docs/02-media-and-creation/video-player-iina.md)<br>[音频内录与虚拟声卡 BlackHole](./docs/02-media-and-creation/audio-routing.md)<br>[截图长截图与贴图 Shottr](./docs/02-media-and-creation/screenshot-tools.md) | • mpv 内核全格式硬解与 Liquid Retina XDR 映射<br>• 多输出设备实现电脑内部声音无损内录<br>• 极速滚动长截图、离线毫秒级 OCR 与贴图置顶 |
 | **03. 输入排版** | [输入法大升级与自动切换](./docs/03-input-and-fonts/input-methods.md)<br>[字体排版与终端渲染美化](./docs/03-input-and-fonts/typography-fonts.md) | • Input Source Pro 针对特定软件秒切中英文<br>• Rime 鼠须管雾凇拼音完全离线词库<br>• 更纱黑体解决中英文等宽表格撕裂错位 |
 | **04. 兼容游戏** | [Apple Silicon 玩 Windows 游戏](./docs/04-windows-and-gaming/whisky-gaming.md)<br>[虚拟机方案 UTM vs Parallels](./docs/04-windows-and-gaming/virtual-machines.md) | • Whisky + Apple GPTK (D3DMetal) 翻译层<br>• 免装虚拟机畅玩 Windows Steam 3A 游戏<br>• 开源 UTM 免费一键部署 Windows 11 ARM |

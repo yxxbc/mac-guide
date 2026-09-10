@@ -45,7 +45,7 @@ features:
     <a href="https://linux.do"><img src="https://img.shields.io/badge/LinuxDo-社区-4FC08D?style=flat-square&logo=linux&logoColor=white" alt="LinuxDo" /></a>
     <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
     <a href="https://github.com/yxxbc/mac-guide/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
-    <img src="https://img.shields.io/badge/Docs-44%20Guides-7B2CBF?style=flat-square" alt="Guides" />
+    <img src="https://img.shields.io/badge/Docs-45%20Guides-7B2CBF?style=flat-square" alt="Guides" />
     <img src="https://img.shields.io/badge/Zero--SIP--Disable-100%25-success?style=flat-square" alt="Zero SIP Disable" />
   </p>
 </div>
@@ -76,7 +76,8 @@ mac-guide/
 │   ├── window-snapping.md     # 日常轻量分屏：Rectangle 与原生窗口吸附
 │   ├── office-essentials.md   # 解压乱码救星 Keka 与原生办公高阶技巧
 │   └── continuity-and-handoff.md # 跨设备生态互联：接力、隔空投送与 LocalSend
-├── 01-hardware-and-display/   # 外接设备与硬件生态（痛点高发区）
+├── 01-hardware-and-display/   # 硬件外设与屏幕显示（痛点高发区）
+│   ├── built-in-display-color.md # 内置屏幕色彩调优：Color Presets 预设与色彩管理实战
 │   ├── external-displays.md   # 外接显示器避坑：HiDPI发虚、DDC硬件调光与 BetterDisplay
 │   ├── ntfs-and-disks.md      # 移动硬盘与 U 盘 NTFS 无法写入终极解法 (exFAT与工具)
 │   ├── input-and-mouse.md     # 键位与外接鼠标：消除滚轮卡顿 (MOS) 与外接键盘映射

@@ -29,7 +29,7 @@ export default withMermaid(
         text: '新手与日常',
         items: [
           { text: '00. 新手入门', link: '/00-beginner-guide/windows-to-mac' },
-          { text: '01. 硬件外设', link: '/01-hardware-and-display/external-displays' },
+          { text: '01. 硬件外设与屏幕', link: '/01-hardware-and-display/built-in-display-color' },
           { text: '02. 影音创作', link: '/02-media-and-creation/video-player-iina' },
           { text: '03. 输入排版', link: '/03-input-and-fonts/input-methods' },
           { text: '04. 兼容游戏', link: '/04-windows-and-gaming/whisky-gaming' },
@@ -77,9 +77,10 @@ export default withMermaid(
             ]
           },
           {
-            text: '01. 外接设备与硬件生态',
+            text: '01. 硬件外设与屏幕显示',
             collapsed: false,
             items: [
+              { text: '内置屏幕色彩调优：预设与色彩管理', link: '/01-hardware-and-display/built-in-display-color' },
               { text: '外接显示器避坑：HiDPI 与 BetterDisplay', link: '/01-hardware-and-display/external-displays' },
               { text: '移动硬盘与 U 盘 NTFS 无法写入', link: '/01-hardware-and-display/ntfs-and-disks' },
               { text: '键位与外接鼠标：滚轮平滑 MOS', link: '/01-hardware-and-display/input-and-mouse' },
