@@ -134,6 +134,17 @@ mac-guide/
 
 ---
 
+## ☕️ 赞赏与支持 (Sponsor)
+
+如果这份指南帮你在日常使用与极客开发中避开了坑、节省了宝贵的时间，欢迎请作者喝一杯清爽的咖啡 ☕️！你的支持将让这份文档保持长久的高质量维护与更新。
+
+<div align="center" style="margin: 2rem 0;">
+  <img src="/sponsor.png" width="260" alt="赞赏码 - 给 Black Cat 赞赏" style="border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);" />
+  <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--vp-c-text-2);">扫码微信赞赏（给 Black Cat 赞赏）</p>
+</div>
+
+---
+
 ## 核心设计原则
 
 1. **坚持授人以渔，拒绝黑盒脚本**：每一个配置命令都带详细注释、原理解释与恢复命令（反悔药），绝不给出一步黑盒脚本盲目执行；

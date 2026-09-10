@@ -137,6 +137,19 @@
 
 ---
 
+## ☕️ 赞赏与支持 (Sponsor)
+
+如果这份指南帮你在新机配置、日常避坑或极客生产力打造中节省了宝贵的时间，欢迎请作者喝一杯清爽的咖啡 ☕️！
+
+你的每一份认可与支持，都是本指南长期维护、紧跟最新 macOS 版本迭代的最大动力。
+
+<div align="center">
+  <img src="./assets/sponsor.png" width="280" alt="赞赏码 - 给 Black Cat 赞赏" style="border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);" />
+  <p><sub>扫码微信赞赏（给 Black Cat 赞赏）</sub></p>
+</div>
+
+---
+
 ## 📄 知识产权与许可证
 
 本项目文档与内容遵循 **[CC BY-NC-ND 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)** (署名-非商业性使用-禁止演绎 4.0 国际) 授权：
