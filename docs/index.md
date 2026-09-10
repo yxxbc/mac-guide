@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "mac-guide"
-  text: "macOS 现代全景调教指南"
-  tagline: "从小白日常避坑到硬核极客工作流，一份成体系、有主见、现代化的 macOS 实践手册。"
+  text: "macOS 现代全景配置指南"
+  tagline: "从小白日常避坑到硬核极客工作流，一份成体系、讲原理解释、现代化的 macOS 实战手册。"
   image:
     src: /logo.svg
     alt: mac-guide
@@ -13,7 +13,7 @@ hero:
       text: 🚀 开始阅读
       link: /00-beginner-guide/windows-to-mac
     - theme: alt
-      text: 💻 硬件选购与调教
+      text: 💻 硬件选购与调优
       link: /10-history-and-hardware/hardware-lineup-guide
     - theme: alt
       text: ⭐️ GitHub 仓库
@@ -23,6 +23,9 @@ features:
   - icon: 🛡️
     title: 零安全妥协
     details: 坚决不关 SIP（系统完整性保护），100% 遵守原厂安全边界，保障硬件级安全与系统平滑升级。
+  - icon: 💡
+    title: 拒绝黑盒，授人以渔
+    details: 绝不抛出盲目的黑盒一键脚本；每一条命令和脚本配置均透彻讲清作用机制、参数原理与反悔复原方法。
   - icon: ⚡
     title: 极速与原生
     details: GPU 硬件加速终端、淘汰臃肿 Docker Desktop、极速按键连发、Metal 渲染与高刷流畅支持。
@@ -33,11 +36,8 @@ features:
     title: 全场景人群覆盖
     details: Windows 换机小白、日常轻度办公、音视频创作、游戏兼容到重度平铺键盘流程序员全面覆盖。
   - icon: 🖥️
-    title: 硬件全景与调教
-    details: 40年架构演变、统一内存与外接多屏避坑、MacBook Air 控温、Pro 刘海隐藏、mini 无头主机。
-  - icon: 🐧
-    title: LinuxDo 社区驱动
-    details: 与 LinuxDo 社区共同维护，全面拥抱纯净开源神器，坚决唾弃商业流氓清理大师与弹窗广告。
+    title: 硬件全景与 UNIX 内核
+    details: 统一内存零拷贝、Media Engine 硬件硬解、XNU 混合内核、launchd 调度与 APFS 写入时复制。
 ---
 
 <div align="center" style="margin-top: 2rem;">
@@ -45,22 +45,23 @@ features:
     <a href="https://linux.do"><img src="https://img.shields.io/badge/LinuxDo-社区-4FC08D?style=flat-square&logo=linux&logoColor=white" alt="LinuxDo" /></a>
     <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
     <a href="https://github.com/yxxbc/mac-guide/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
-    <img src="https://img.shields.io/badge/Docs-41%20Guides-7B2CBF?style=flat-square" alt="Guides" />
+    <img src="https://img.shields.io/badge/Docs-44%20Guides-7B2CBF?style=flat-square" alt="Guides" />
     <img src="https://img.shields.io/badge/Zero--SIP--Disable-100%25-success?style=flat-square" alt="Zero SIP Disable" />
   </p>
 </div>
 
 ---
 
-## 🌟 项目简介
+## 🌟 项目简介与核心理念
 
 长期以来，无论是在中文社区还是海外论坛，关于 macOS 的深度配置资料都面临着严重的**两极分化与碎片化**：
 - **普通用户两眼一抹黑**：网上充斥着铺天盖地的营销号推荐、流氓清理软件甚至恶意推广，而关于“外接显示器字体模糊发虚”、“移动硬盘 NTFS 无法写入”、“解压 Windows 压缩包中文乱码”、“没有剪切键”等高频日常痛点，往往找不到系统、靠谱且免费的现代解法；
 - **进阶极客无处着手**：很多从 Linux（特别是 Arch Linux / Hyprland / i3）转到 Mac 的开发者，被漫长的窗口动画、生硬的外接鼠标滚轮、打架的快捷键和复杂的权限模型劝退；
+- **黑盒一键脚本的灾难**：网络上充斥着所谓的“一键优化脚本”，用户复制执行后根本不知道改动了哪些底层参数，一旦系统报错无从查起，甚至破坏系统更新稳定性；
 - **资料过时严重**：许多网络攻略停留在 Intel Mac 时代（推荐早已过时的 CleanMyMac、旧版 Yabai 关 SIP、Soundflower 虚拟声卡等），在现代 Apple Silicon (M 系列芯片) 和最新 macOS 版本下早已失效甚至引发崩溃。
 
-**这份指南的目标是打破一切割裂**：
-无论你是刚买第一台 MacBook 的大学生、日常轻度办公文职、摄影与影音创作者，还是重度键盘流的程序员与开源极客，都能在这里找到**符合现代 macOS 架构的最佳实践与开箱即用方案**。
+**这份指南的目标是打破一切割裂，坚持“授人以渔”**：
+无论你是刚买第一台 MacBook 的大学生、日常轻度办公文职、摄影与影音创作者，还是重度键盘流的程序员与开源极客，都能在这里找到**讲清底层原理、没有黑盒陷阱、符合现代 macOS 架构的最佳实践**。
 
 ---
 
@@ -93,7 +94,7 @@ mac-guide/
 ├── 05-system-maintenance/     # 系统净化与存储维护
 │   ├── system-cleaner.md      # 彻底卸载应用：AppCleaner 拒绝流氓清理软件
 │   ├── storage-rescue.md      # 深度拯救“系统数据”暴增：本地快照与大文件清理
-│   ├── defaults-tuning.md     # defaults 命令行深度调优：消除动画与 Finder 净化
+│   ├── defaults-tuning.md     # defaults 命令行深度配置与优化：原理剖析与反悔复原
 │   └── time-machine-nas.md    # 时间机器全能备份：移动硬盘与 NAS 无线静默备份
 ├── 06-package-management/     # 现代包管理与开发底座 (开发者篇)
 │   ├── homebrew.md            # Homebrew 现代化管理：清华源加速与 Brewfile 备份
@@ -116,17 +117,22 @@ mac-guide/
 │   ├── network-proxy.md       # macOS 网络代理避坑：终端 proxy 函数与 TUN 模式
 │   ├── dns-and-hosts.md       # 本地开发域名与 Hosts 管理：避开 .local 陷阱与 SwitchHosts
 │   └── dotfiles-backup.md     # 声明式 Dotfiles 跨机同步：Chezmoi 换机一键还原
-└── 10-history-and-hardware/   # 硬件全景、机型调教与技术演进
-    ├── mac-history-and-evolution.md # Mac 发展史与架构演变：从 1984 到 Apple Silicon 革命
-    ├── hardware-lineup-guide.md     # Mac 全系列机型解析与选购避坑指南 (内存/外接屏/SSD)
-    └── model-specific-tuning.md     # 特定机型专属调教：Air控温/Pro刘海/mini无头服务器
+├── 10-history-and-hardware/   # 硬件全景、机型深度调优与技术演进
+│   ├── mac-history-and-evolution.md # Mac 发展史与架构演变：从 1984 到 Apple Silicon 革命
+│   ├── hardware-lineup-guide.md     # Mac 全系列机型解析与选购避坑指南 (内存/外接屏/SSD)
+│   └── model-specific-tuning.md     # 特定机型专属深度调优：Air控温/Pro刘海/mini无头服务器
+└── 11-unix-and-system-internals/ # UNIX 底层机制与硬件极限压榨 (极客与底层探秘)
+    ├── xnu-darwin-architecture.md   # XNU 混合内核与 Darwin 架构揭秘 (UNIX认证/Mach微内核/BSD/GCD)
+    ├── hardware-squeezing-and-silicon.md # Apple Silicon 硬件极限压榨与异构加速 (统一内存/Media Engine/内存压缩)
+    └── bsd-tools-and-launchd.md     # UNIX 生产力深水区：launchd 调度、BSD 差异与 APFS 写入时复制
 ```
 
 ---
 
 ## 核心设计原则
 
-1. **全人群场景覆盖**：从纯小白日常使用痛点（看视频、外接屏幕、鼠标、解压缩、电池保养）到高阶极客工作流无缝衔接；
+1. **坚持授人以渔，拒绝黑盒脚本**：每一个配置命令都带详细注释、原理解释与恢复命令（反悔药），绝不给出一键黑盒脚本盲目执行；
 2. **严守安全与原厂标准**：全面基于 Apple Silicon 硬件与现代 macOS 体系，**坚决不破环 SIP（系统完整性保护）**，保障硬件级安全与系统稳定性；
-3. **优先纯净、开源与免费**：坚决唾弃充斥流氓弹窗与高昂订阅费的商业清理工具，全面选用社区经过时间检验的高口碑工具；
-4. **声明式与可复现**：配置有迹可循、环境一键恢复，拒绝“重装一次系统配置两整天”。
+3. **深入浅出，通俗易懂**：无论是视网膜 HiDPI 超采样还是 XNU 混合内核，均配以直观通俗的原理解析，让新手与小白也能轻松看懂；
+4. **优先纯净、开源与免费**：坚决唾弃充斥流氓弹窗与高昂订阅费的商业清理工具，全面选用社区经过时间检验的高口碑工具；
+5. **声明式与可复现**：配置有迹可循、环境一键恢复，拒绝“重装一次系统配置两整天”。

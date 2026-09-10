@@ -15,8 +15,8 @@ export default withMermaid(
     ['meta', { name: 'theme-color', content: '#6366f1' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'zh-CN' }],
-    ['meta', { property: 'og:title', content: 'mac-guide - macOS 现代全景调教指南' }],
-    ['meta', { property: 'og:description', content: '从小白日常避坑到硬核极客工作流，一份成体系、有主见、现代化的 macOS 实践手册。' }]
+    ['meta', { property: 'og:title', content: 'mac-guide - macOS 现代全景配置指南' }],
+    ['meta', { property: 'og:description', content: '从小白日常避坑到硬核极客工作流，一份成体系、讲原理解释、现代化的 macOS 实战手册。' }]
   ],
 
   themeConfig: {
@@ -46,11 +46,14 @@ export default withMermaid(
         ]
       },
       {
-        text: '硬件与演进',
+        text: '硬件与内核',
         items: [
-          { text: 'Mac 40年架构演变史', link: '/10-history-and-hardware/mac-history-and-evolution' },
-          { text: '全系列机型选购避坑', link: '/10-history-and-hardware/hardware-lineup-guide' },
-          { text: '特定机型专属调教', link: '/10-history-and-hardware/model-specific-tuning' }
+          { text: '10. Mac 40年架构演变史', link: '/10-history-and-hardware/mac-history-and-evolution' },
+          { text: '10. 全系列机型选购避坑', link: '/10-history-and-hardware/hardware-lineup-guide' },
+          { text: '10. 特定机型专属深度调优', link: '/10-history-and-hardware/model-specific-tuning' },
+          { text: '11. XNU 内核与 Darwin 架构', link: '/11-unix-and-system-internals/xnu-darwin-architecture' },
+          { text: '11. Apple Silicon 硬件极限压榨', link: '/11-unix-and-system-internals/hardware-squeezing-and-silicon' },
+          { text: '11. launchd 与 APFS 机制', link: '/11-unix-and-system-internals/bsd-tools-and-launchd' }
         ]
       },
       { text: '🐧 LinuxDo', link: 'https://linux.do' }
@@ -168,16 +171,31 @@ export default withMermaid(
         ]
       },
       {
-        text: '第三部分：硬件全景与机型调教',
+        text: '第三部分：硬件全景与机型深度调优',
         collapsed: false,
         items: [
           {
-            text: '10. 硬件全景、机型调教与技术演进',
+            text: '10. 硬件全景、机型调优与技术演进',
             collapsed: false,
             items: [
               { text: 'Mac 40年架构演变：1984 到 M 芯片', link: '/10-history-and-hardware/mac-history-and-evolution' },
               { text: '全系列机型解析与选购避坑指南', link: '/10-history-and-hardware/hardware-lineup-guide' },
-              { text: '特定机型专属调教：Air/Pro/mini', link: '/10-history-and-hardware/model-specific-tuning' }
+              { text: '特定机型专属深度调优：Air/Pro/mini', link: '/10-history-and-hardware/model-specific-tuning' }
+            ]
+          }
+        ]
+      },
+      {
+        text: '第四部分：UNIX 底层与系统内核',
+        collapsed: false,
+        items: [
+          {
+            text: '11. UNIX 底层与架构精要',
+            collapsed: false,
+            items: [
+              { text: 'XNU 混合内核与 Darwin 架构揭秘', link: '/11-unix-and-system-internals/xnu-darwin-architecture' },
+              { text: 'Apple Silicon 硬件极限压榨与异构加速', link: '/11-unix-and-system-internals/hardware-squeezing-and-silicon' },
+              { text: 'UNIX 生产力深水区：launchd 与 APFS', link: '/11-unix-and-system-internals/bsd-tools-and-launchd' }
             ]
           }
         ]
