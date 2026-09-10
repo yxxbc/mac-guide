@@ -8,6 +8,7 @@
   <p><b>从小白日常避坑到硬核极客工作流，一份成体系、有主见、现代化的 macOS 实践手册</b></p>
 
   <p>
+    <a href="https://yxxbc.github.io/mac-guide/"><img src="https://img.shields.io/badge/Online%20Docs-VitePress-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Online Docs" /></a>
     <a href="https://linux.do"><img src="https://img.shields.io/badge/LinuxDo-社区-4FC08D?style=flat-square&logo=linux&logoColor=white" alt="LinuxDo" /></a>
     <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
     <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
@@ -16,6 +17,7 @@
   </p>
 
   <p>
+    <a href="https://yxxbc.github.io/mac-guide/"><strong>🌐 在线阅读 (Pages)</strong></a> •
     <a href="#-全景文档导航"><strong>探索文档</strong></a> •
     <a href="#-核心设计哲学"><strong>核心哲学</strong></a> •
     <a href="#-快速上手路线推荐"><strong>上手路线</strong></a> •

@@ -1,0 +1,24 @@
+{
+  "name": "mac-guide",
+  "version": "1.0.0",
+  "description": "一套成体系、全场景、现代化的 macOS 实践手册。从小白日常避坑到硬核极客工作流，涵盖外设/影音/游戏/系统维护/现代终端/平铺桌面 (AeroSpace)。",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "macos",
+    "macbook",
+    "apple-silicon",
+    "aerospace",
+    "guide",
+    "homebrew"
+  ],
+  "author": "yxxbc",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

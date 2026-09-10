@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# OS and Editor
+.DS_Store
+*.local

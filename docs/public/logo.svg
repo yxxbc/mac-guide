@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Squircle Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="50%" stop-color="#181825"/>
+      <stop offset="100%" stop-color="#11111b"/>
+    </linearGradient>
+
+    <!-- Neon Ribbon / Command Gradient -->
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="35%" stop-color="#00BBF9"/>
+      <stop offset="70%" stop-color="#7B2CBF"/>
+      <stop offset="100%" stop-color="#F72585"/>
+    </linearGradient>
+
+    <!-- Terminal Bar Gradient -->
+    <linearGradient id="termBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#313244" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#45475a" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- Glowing Drop Shadow -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Base macOS App Squircle -->
+  <rect x="32" y="32" width="448" height="448" rx="100" ry="100" fill="url(#bgGrad)" filter="url(#cardShadow)"/>
+  
+  <!-- Subtle Border Highlight -->
+  <rect x="33" y="33" width="446" height="446" rx="99" ry="99" fill="none" stroke="#45475a" stroke-width="2" stroke-opacity="0.6"/>
+
+  <!-- Inner Glass Terminal Window Plate -->
+  <rect x="68" y="76" width="376" height="360" rx="36" ry="36" fill="#181825" fill-opacity="0.75" stroke="#313244" stroke-width="1.5"/>
+
+  <!-- macOS Window Traffic Light Dots -->
+  <circle cx="108" cy="112" r="8" fill="#FF5F56"/>
+  <circle cx="132" cy="112" r="8" fill="#FFBD2E"/>
+  <circle cx="156" cy="112" r="8" fill="#27C93F"/>
+
+  <!-- Window Header Line -->
+  <line x1="68" y1="144" x2="444" y2="144" stroke="#313244" stroke-width="1.5" stroke-opacity="0.7"/>
+
+  <!-- Subtle Terminal Title -->
+  <text x="256" y="118" fill="#a6adc8" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" text-anchor="middle" opacity="0.75">MAC-GUIDE</text>
+
+  <!-- Central Emblem: Fusion of Command Key ⌘ and Terminal Prompt ❯_ -->
+  <g transform="translate(146, 175)" filter="url(#neonGlow)">
+    <!-- Command Key ⌘ Icon -->
+    <path d="M 50,30 
+             A 20,20 0 1,1 70,50 
+             L 70,70 
+             L 50,70 
+             A 20,20 0 1,1 30,50 
+             L 30,50 
+             A 20,20 0 0,1 50,30 Z
+             M 150,30 
+             A 20,20 0 1,1 170,50 
+             L 170,70 
+             L 150,70 
+             A 20,20 0 1,1 130,50 
+             L 130,50 
+             A 20,20 0 0,1 150,30 Z
+             M 50,130 
+             A 20,20 0 1,1 70,150 
+             L 70,170 
+             L 50,170 
+             A 20,20 0 1,1 30,150 
+             L 30,150 
+             A 20,20 0 0,1 50,130 Z
+             M 150,130 
+             A 20,20 0 1,1 170,150 
+             L 170,170 
+             L 150,170 
+             A 20,20 0 1,1 130,150 
+             L 130,150 
+             A 20,20 0 0,1 150,130 Z"
+          fill="none" 
+          stroke="url(#neonGrad)" 
+          stroke-width="14" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          opacity="0.35"/>
+
+    <!-- Dynamic Terminal Prompt Shell Chevron ❯ -->
+    <path d="M 55,75 L 115,110 L 55,145" 
+          fill="none" 
+          stroke="url(#neonGrad)" 
+          stroke-width="18" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+
+    <!-- Glowing Cursor _ -->
+    <line x1="135" y1="145" x2="175" y2="145" 
+          stroke="url(#neonGrad)" 
+          stroke-width="18" 
+          stroke-linecap="round"/>
+  </g>
+
+  <!-- Bottom Accent / Rice Dots -->
+  <g transform="translate(256, 395)" text-anchor="middle">
+    <circle cx="-36" cy="0" r="4" fill="#F72585" opacity="0.8"/>
+    <circle cx="-12" cy="0" r="4" fill="#7B2CBF" opacity="0.8"/>
+    <circle cx="12" cy="0" r="4" fill="#00BBF9" opacity="0.8"/>
+    <circle cx="36" cy="0" r="4" fill="#00F5D4" opacity="0.8"/>
+  </g>
+</svg>

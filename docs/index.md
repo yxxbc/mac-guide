@@ -1,10 +1,58 @@
-# macOS 现代全景调教指南 (mac-guide)
+---
+layout: home
 
-> 从 Windows 迁移到日常办公，从多媒体创作到极客平铺桌面，打造一套无废话、全覆盖、开箱即用的现代化 macOS 全景手册。
+hero:
+  name: "mac-guide"
+  text: "macOS 现代全景调教指南"
+  tagline: "从小白日常避坑到硬核极客工作流，一份成体系、有主见、现代化的 macOS 实践手册。"
+  image:
+    src: /logo.svg
+    alt: mac-guide
+  actions:
+    - theme: brand
+      text: 🚀 开始阅读
+      link: /00-beginner-guide/windows-to-mac
+    - theme: alt
+      text: 💻 硬件选购与调教
+      link: /10-history-and-hardware/hardware-lineup-guide
+    - theme: alt
+      text: ⭐️ GitHub 仓库
+      link: https://github.com/yxxbc/mac-guide
+
+features:
+  - icon: 🛡️
+    title: 零安全妥协
+    details: 坚决不关 SIP（系统完整性保护），100% 遵守原厂安全边界，保障硬件级安全与系统平滑升级。
+  - icon: ⚡
+    title: 极速与原生
+    details: GPU 硬件加速终端、淘汰臃肿 Docker Desktop、极速按键连发、Metal 渲染与高刷流畅支持。
+  - icon: 📜
+    title: 声明式复现
+    details: 基于 Brewfile 与 Chezmoi 实现一键环境恢复，新机开箱 5 分钟满血复活，告别手工重复配置。
+  - icon: 🎯
+    title: 全场景人群覆盖
+    details: Windows 换机小白、日常轻度办公、音视频创作、游戏兼容到重度平铺键盘流程序员全面覆盖。
+  - icon: 🖥️
+    title: 硬件全景与调教
+    details: 40年架构演变、统一内存与外接多屏避坑、MacBook Air 控温、Pro 刘海隐藏、mini 无头主机。
+  - icon: 🐧
+    title: LinuxDo 社区驱动
+    details: 与 LinuxDo 社区共同维护，全面拥抱纯净开源神器，坚决唾弃商业流氓清理大师与弹窗广告。
+---
+
+<div align="center" style="margin-top: 2rem;">
+  <p>
+    <a href="https://linux.do"><img src="https://img.shields.io/badge/LinuxDo-社区-4FC08D?style=flat-square&logo=linux&logoColor=white" alt="LinuxDo" /></a>
+    <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
+    <a href="https://github.com/yxxbc/mac-guide/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
+    <img src="https://img.shields.io/badge/Docs-41%20Guides-7B2CBF?style=flat-square" alt="Guides" />
+    <img src="https://img.shields.io/badge/Zero--SIP--Disable-100%25-success?style=flat-square" alt="Zero SIP Disable" />
+  </p>
+</div>
 
 ---
 
-## 为什么写这份指南？
+## 🌟 项目简介
 
 长期以来，无论是在中文社区还是海外论坛，关于 macOS 的深度配置资料都面临着严重的**两极分化与碎片化**：
 - **普通用户两眼一抹黑**：网上充斥着铺天盖地的营销号推荐、流氓清理软件甚至恶意推广，而关于“外接显示器字体模糊发虚”、“移动硬盘 NTFS 无法写入”、“解压 Windows 压缩包中文乱码”、“没有剪切键”等高频日常痛点，往往找不到系统、靠谱且免费的现代解法；
@@ -16,7 +64,7 @@
 
 ---
 
-## 全景架构导航
+## 📖 全景架构导航
 
 ```
 mac-guide/
