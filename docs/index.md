@@ -25,7 +25,8 @@ mac-guide/
 │   ├── initial-setup.md       # 系统初始化设置：触控板三指拖移、Gatekeeper 与 SIP
 │   ├── quick-look.md          # 神奇的空格键：Quick Look 预览增强全家桶
 │   ├── window-snapping.md     # 日常轻量分屏：Rectangle 与原生窗口吸附
-│   └── office-essentials.md   # 解压乱码救星 Keka 与原生办公高阶技巧
+│   ├── office-essentials.md   # 解压乱码救星 Keka 与原生办公高阶技巧
+│   └── continuity-and-handoff.md # 跨设备生态互联：接力、隔空投送与 LocalSend
 ├── 01-hardware-and-display/   # 外接设备与硬件生态（痛点高发区）
 │   ├── external-displays.md   # 外接显示器避坑：HiDPI发虚、DDC硬件调光与 BetterDisplay
 │   ├── ntfs-and-disks.md      # 移动硬盘与 U 盘 NTFS 无法写入终极解法 (exFAT与工具)
@@ -44,9 +45,12 @@ mac-guide/
 ├── 05-system-maintenance/     # 系统净化与存储维护
 │   ├── system-cleaner.md      # 彻底卸载应用：AppCleaner 拒绝流氓清理软件
 │   ├── storage-rescue.md      # 深度拯救“系统数据”暴增：本地快照与大文件清理
-│   └── defaults-tuning.md     # defaults 命令行深度调优：消除动画与 Finder 净化
+│   ├── defaults-tuning.md     # defaults 命令行深度调优：消除动画与 Finder 净化
+│   └── time-machine-nas.md    # 时间机器全能备份：移动硬盘与 NAS 无线静默备份
 ├── 06-package-management/     # 现代包管理与开发底座 (开发者篇)
 │   ├── homebrew.md            # Homebrew 现代化管理：清华源加速与 Brewfile 备份
+│   ├── xcode-clt.md           # 拒绝 40GB 庞大 Xcode：CLT 命令行工具极简安装与更新避坑
+│   ├── arm64-and-rosetta.md   # Apple Silicon 双架构开发：arm64 与 x86_64 隔离与 C/C++ 路径
 │   ├── runtime-mise.md        # 现代运行时管理神器 mise (统一 Node/Py/Go/Rust)
 │   └── containers.md          # 轻量容器化方案：告别 Docker Desktop，拥抱 OrbStack
 ├── 07-terminal-and-cli/       # 现代终端与 CLI 生产力
@@ -58,9 +62,11 @@ mac-guide/
 │   ├── aerospace.md           # 免关 SIP 平铺利器 AeroSpace：i3 树形平铺与瞬切
 │   ├── borders-and-bar.md     # 窗口活动边框 JankyBorders 与视觉增强
 │   ├── launcher-raycast.md    # 效率中枢 Raycast：深度配置与工作流
-│   └── karabiner-hyper.md     # Karabiner-Elements 与 Hyper 超级键 (Caps Lock 改造)
+│   ├── karabiner-hyper.md     # Karabiner-Elements 与 Hyper 超级键 (Caps Lock 改造)
+│   └── hammerspoon-automation.md # 用 Lua 脚本操纵一切：Hammerspoon 桌面自动化
 └── 09-workflows-and-tricks/   # 实用技巧与日常维护
     ├── network-proxy.md       # macOS 网络代理避坑：终端 proxy 函数与 TUN 模式
+    ├── dns-and-hosts.md       # 本地开发域名与 Hosts 管理：避开 .local 陷阱与 SwitchHosts
     └── dotfiles-backup.md     # 声明式 Dotfiles 跨机同步：Chezmoi 换机一键还原
 ```
 

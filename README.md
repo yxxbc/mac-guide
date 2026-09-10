@@ -10,15 +10,15 @@
   <p>
     <a href="https://linux.do"><img src="https://img.shields.io/badge/LinuxDo-社区-4FC08D?style=flat-square&logo=linux&logoColor=white" alt="LinuxDo" /></a>
     <img src="https://img.shields.io/badge/macOS-14%2B%20%7C%20Apple%20Silicon-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14+" />
-    <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" />
-    <img src="https://img.shields.io/badge/Docs-32%20Guides-7B2CBF?style=flat-square" alt="Guides" />
+    <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
+    <img src="https://img.shields.io/badge/Docs-38%20Guides-7B2CBF?style=flat-square" alt="Guides" />
     <img src="https://img.shields.io/badge/Zero--SIP--Disable-100%25-success?style=flat-square" alt="Zero SIP Disable" />
   </p>
 
   <p>
     <a href="#-全景文档导航"><strong>探索文档</strong></a> •
     <a href="#-核心设计哲学"><strong>核心哲学</strong></a> •
-    <a href="#-快速上手路线"><strong>上手路线</strong></a> •
+    <a href="#-快速上手路线推荐"><strong>上手路线</strong></a> •
     <a href="https://linux.do"><strong>Linux.do 讨论区</strong></a>
   </p>
 
@@ -61,27 +61,27 @@
 
 ## 📖 全景文档导航
 
-全部 32 篇深度实战文档均位于 [`docs/`](./docs/index.md) 目录，结构如下：
+全部 38 篇深度实战文档均位于 [`docs/`](./docs/index.md) 目录，结构如下：
 
 ### 第一部分：新手起步、日常办公与多媒体
 
 | 模块 | 核心文档 | 亮点与解决痛点 |
 | :--- | :--- | :--- |
-| **00. 新手入门** | [概念重塑与避坑指南](./docs/00-beginner-guide/windows-to-mac.md)<br>[系统初始化与安全边界](./docs/00-beginner-guide/initial-setup.md)<br>[神奇的空格键 Quick Look](./docs/00-beginner-guide/quick-look.md)<br>[日常轻量分屏 Rectangle](./docs/00-beginner-guide/window-snapping.md)<br>[解压乱码救星 Keka](./docs/00-beginner-guide/office-essentials.md) | • 红黄绿真正生命周期模型<br>• 为什么没有剪切？`Cmd+Opt+V` 移动文件<br>• 触控板三指拖移黄金设置<br>• 任何来源与 Gatekeeper 绕过<br>• 空格预览增强（代码高亮/MD/JSON）<br>• 彻底终结 Windows 压缩包中文乱码 |
+| **00. 新手入门** | [概念重塑与避坑指南](./docs/00-beginner-guide/windows-to-mac.md)<br>[系统初始化与安全边界](./docs/00-beginner-guide/initial-setup.md)<br>[神奇的空格键 Quick Look](./docs/00-beginner-guide/quick-look.md)<br>[日常轻量分屏 Rectangle](./docs/00-beginner-guide/window-snapping.md)<br>[解压乱码救星 Keka](./docs/00-beginner-guide/office-essentials.md)<br>[跨设备生态与 LocalSend](./docs/00-beginner-guide/continuity-and-handoff.md) | • 红黄绿真正生命周期模型<br>• 为什么没有剪切？`Cmd+Opt+V` 移动文件<br>• 触控板三指拖移黄金设置<br>• 任何来源与 Gatekeeper 绕过<br>• 空格预览增强（代码高亮/MD/JSON）<br>• 彻底终结 Windows 压缩包中文乱码<br>• 通用剪贴板、连续互通与跨端局域网传输 |
 | **01. 硬件外设** | [外接显示器 HiDPI 避坑](./docs/01-hardware-and-display/external-displays.md)<br>[移动硬盘 NTFS 无法写入](./docs/01-hardware-and-display/ntfs-and-disks.md)<br>[键位与外接鼠标体验修复](./docs/01-hardware-and-display/input-and-mouse.md)<br>[MacBook 电池长寿秘诀](./docs/01-hardware-and-display/battery-aldente.md) | • BetterDisplay 强开 2K/4K 原生 HiDPI<br>• 原生键盘调节第三方显示器背光/音量<br>• 跨平台 exFAT 格式化最佳实践<br>• MOS 独立控制鼠标滚轮平滑与方向<br>• AlDente 80% 物理锁电与直通供电防鼓包 |
 | **02. 影音创作** | [影音播放器天花板 IINA](./docs/02-media-and-creation/video-player-iina.md)<br>[音频内录与虚拟声卡 BlackHole](./docs/02-media-and-creation/audio-routing.md)<br>[截图长截图与贴图 Shottr](./docs/02-media-and-creation/screenshot-tools.md) | • mpv 内核全格式硬解与 Liquid Retina XDR 映射<br>• 多输出设备实现电脑内部声音无损内录<br>• 极速滚动长截图、离线毫秒级 OCR 与贴图置顶 |
 | **03. 输入排版** | [输入法大升级与自动切换](./docs/03-input-and-fonts/input-methods.md)<br>[字体排版与终端渲染美化](./docs/03-input-and-fonts/typography-fonts.md) | • Input Source Pro 针对特定软件秒切中英文<br>• Rime 鼠须管雾凇拼音完全离线词库<br>• 更纱黑体解决中英文等宽表格撕裂错位 |
 | **04. 兼容游戏** | [Apple Silicon 玩 Windows 游戏](./docs/04-windows-and-gaming/whisky-gaming.md)<br>[虚拟机方案 UTM vs Parallels](./docs/04-windows-and-gaming/virtual-machines.md) | • Whisky + Apple GPTK (D3DMetal) 翻译层<br>• 免装虚拟机畅玩 Windows Steam 3A 游戏<br>• 开源 UTM 免费一键部署 Windows 11 ARM |
-| **05. 维护存储** | [彻底卸载应用 AppCleaner](./docs/05-system-maintenance/system-cleaner.md)<br>[深度拯救“系统数据”暴增](./docs/05-system-maintenance/storage-rescue.md)<br>[defaults 命令行深度调优](./docs/05-system-maintenance/defaults-tuning.md) | • 揭露流氓清理大师谎言，AppCleaner 纯净卸载<br>• 查找并清除 Time Machine 本地快照释放几十 GB<br>• 消除 Dock 延迟、Finder 始终显示扩展名 |
+| **05. 维护存储** | [彻底卸载应用 AppCleaner](./docs/05-system-maintenance/system-cleaner.md)<br>[深度拯救“系统数据”暴增](./docs/05-system-maintenance/storage-rescue.md)<br>[defaults 命令行深度调优](./docs/05-system-maintenance/defaults-tuning.md)<br>[时间机器与 NAS 备份指南](./docs/05-system-maintenance/time-machine-nas.md) | • 揭露流氓清理大师谎言，AppCleaner 纯净卸载<br>• 查找并清除 Time Machine 本地快照释放几十 GB<br>• 消除 Dock 延迟、Finder 始终显示扩展名<br>• 搭建免插线 NAS 局域网静默无线备份 |
 
 ### 第二部分：极客开发、现代命令行与全键盘桌面
 
 | 模块 | 核心文档 | 亮点与解决痛点 |
 | :--- | :--- | :--- |
-| **06. 包管理底座**| [Homebrew 现代化管理体系](./docs/06-package-management/homebrew.md)<br>[现代运行时管理神器 mise](./docs/06-package-management/runtime-mise.md)<br>[轻量容器化方案 OrbStack](./docs/06-package-management/containers.md) | • 国内清华镜像源极速配置<br>• `Brewfile` 声明式全软件跨机一键还原<br>• 一个二进制管理 Node/Py/Go/Rust，0ms 启动<br>• 淘汰臃肿 Docker Desktop，仅耗 100MB 内存 |
+| **06. 包管理底座**| [Homebrew 现代化管理体系](./docs/06-package-management/homebrew.md)<br>[Xcode 命令行工具 (CLT) 极简安装](./docs/06-package-management/xcode-clt.md)<br>[Apple Silicon 双架构开发隔离](./docs/06-package-management/arm64-and-rosetta.md)<br>[现代运行时管理神器 mise](./docs/06-package-management/runtime-mise.md)<br>[轻量容器化方案 OrbStack](./docs/06-package-management/containers.md) | • 国内清华镜像源极速配置与 `Brewfile` 一键还原<br>• 拒绝 40GB 庞大 Xcode，CLT 极简安装与更新避坑<br>• Rosetta 2 与 arm64/x86 隔离，彻底解决 C/C++ 头文件路径缺失<br>• 一个二进制管理 Node/Py/Go/Rust，0ms 启动<br>• 淘汰臃肿 Docker Desktop，仅耗 100MB 内存 |
 | **07. 现代终端** | [GPU 加速终端 Ghostty / Kitty](./docs/07-terminal-and-cli/terminal-emulators.md)<br>[Shell 与 Starship 极速提示符](./docs/07-terminal-and-cli/shell-and-prompt.md)<br>[现代 CLI 全家桶替代表](./docs/07-terminal-and-cli/modern-unix-tools.md)<br>[终端 Rice 与 fastfetch 看板](./docs/07-terminal-and-cli/fastfetch-rice.md) | • 120Hz 高刷 Metal 渲染与 Nerd Fonts 字体<br>• 弃用臃肿 Oh-My-Zsh，启动延迟压制在 30ms 内<br>• `eza` / `zoxide` / `bat` / `ripgrep` / `delta` 全面替换<br>• 自适应宽度防爆框终端看板 `myfastfetch` |
-| **08. 平铺桌面** | [免关 SIP 平铺利器 AeroSpace](./docs/08-tiling-and-desktop/aerospace.md)<br>[窗口活动边框 JankyBorders](./docs/08-tiling-and-desktop/borders-and-bar.md)<br>[效率中枢 Raycast 深度配置](./docs/08-tiling-and-desktop/launcher-raycast.md)<br>[Karabiner 与 Hyper 超级键](./docs/08-tiling-and-desktop/karabiner-hyper.md) | • **100% 免关 SIP** 的 i3 树形平铺，工作区毫秒瞬切<br>• 活动窗口彩色焦点高亮边框<br>• 替代 Spotlight，集成剪贴板/代码片段/Kill 进程<br>• Caps Lock 改造成 Hyper 键 (Cmd+Ctrl+Opt+Shift) |
-| **09. 技巧维护** | [macOS 网络代理避坑指南](./docs/09-workflows-and-tricks/network-proxy.md)<br>[声明式 Dotfiles 跨机同步](./docs/09-workflows-and-tricks/dotfiles-backup.md) | • 终端 `proxy/unproxy` 函数与 TUN 虚拟网卡排坑<br>• Chezmoi 纳管全部配置，新机 5 分钟满血复活 |
+| **08. 平铺桌面** | [免关 SIP 平铺利器 AeroSpace](./docs/08-tiling-and-desktop/aerospace.md)<br>[窗口活动边框 JankyBorders](./docs/08-tiling-and-desktop/borders-and-bar.md)<br>[效率中枢 Raycast 深度配置](./docs/08-tiling-and-desktop/launcher-raycast.md)<br>[Karabiner 与 Hyper 超级键](./docs/08-tiling-and-desktop/karabiner-hyper.md)<br>[Lua 桌面自动化 Hammerspoon](./docs/08-tiling-and-desktop/hammerspoon-automation.md) | • **100% 免关 SIP** 的 i3 树形平铺，工作区毫秒瞬切<br>• 活动窗口彩色焦点高亮边框<br>• 替代 Spotlight，集成剪贴板/代码片段/Kill 进程<br>• Caps Lock 改造成 Hyper 键 (Cmd+Ctrl+Opt+Shift)<br>• 防社死拔耳机自动静音、Wi-Fi 感知自动化 |
+| **09. 技巧维护** | [macOS 网络代理避坑指南](./docs/09-workflows-and-tricks/network-proxy.md)<br>[本地开发域名与 Hosts 管理](./docs/09-workflows-and-tricks/dns-and-hosts.md)<br>[声明式 Dotfiles 跨机同步](./docs/09-workflows-and-tricks/dotfiles-backup.md) | • 终端 `proxy/unproxy` 函数与 TUN 虚拟网卡排坑<br>• 避开 `.local` 多播 DNS 5秒超时大坑与 SwitchHosts<br>• Chezmoi 纳管全部配置，新机 5 分钟满血复活 |
 
 ---
 
@@ -90,7 +90,7 @@
 - **我是 Mac 新手 / 刚从 Windows 换过来**：
   建议按照 `00. 新手入门` ➡️ `01. 硬件外设` ➡️ `02. 影音创作` 顺序阅读，半小时内把常用阻碍（发虚、乱码、滚轮、剪切）彻底扫清。
 - **我是办公人群 / 创作者**：
-  重点阅读 [Shottr 截图标注](./docs/02-media-and-creation/screenshot-tools.md)、[BlackHole 音频内录](./docs/02-media-and-creation/audio-routing.md) 与 [Keka 办公解压](./docs/00-beginner-guide/office-essentials.md)。
+  重点阅读 [Shottr 截图标注](./docs/02-media-and-creation/screenshot-tools.md)、[BlackHole 音频内录](./docs/02-media-and-creation/audio-routing.md)、[Keka 办公解压](./docs/00-beginner-guide/office-essentials.md) 与 [跨设备互联](./docs/00-beginner-guide/continuity-and-handoff.md)。
 - **我是程序员 / Linux 极客**：
   直接跳至 `06. 包管理` ➡️ `07. 现代终端` ➡️ `08. 平铺桌面`，享受 AeroSpace + Ghostty + mise 带来的原生平铺与全键盘飞速体验。
 
@@ -101,6 +101,10 @@
 欢迎加入 **[Linux.do 社区](https://linux.do)** 参与讨论交流与反馈！
 
 如果你有更好的配置思路、发现了最新 macOS 版本的系统变更，或者想补充冷门神器，欢迎提交 Issue 或 Pull Request 共建维护！
+
+## 📄 开源许可证
+
+本项目遵循 [MIT 许可证](./LICENSE) 开源。
 
 <div align="center">
   <sub>Made with ❤️ for macOS power users and newcomers alike.</sub>
